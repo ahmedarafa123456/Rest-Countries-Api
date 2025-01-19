@@ -1,0 +1,50 @@
+/* Start Variables */
+:root {
+--Dark-Blue: hsl(209, 23%, 22%);
+--Very-Dark-Blue: hsl(207, 26%, 17%);
+--Very-Dark-Blue: hsl(200, 15%, 8%);
+--Dark-Gray: hsl(0, 0%, 52%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+}
+/* Start Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Nunito Sans", serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
