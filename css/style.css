@@ -48,3 +48,82 @@ ul {
     }
 }
 /* End Global Rules */
+/* Start Header */
+.header {
+    box-shadow: 0px 2px 4px 0px hsl(0deg 0% 52% / 27%);
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .container h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.header .container .icon {
+    cursor: pointer;
+}
+.header .container .icon i {
+    font-family: "Font Awesome 6 Free";
+}
+/* End Header */
+/* Start Section */
+.section {
+    margin-top: 5px;
+    background-color: var(--Very-Light-Gray);
+    height: 100vh;
+}
+.section .container .info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+@media (max-width:768px) {
+   .section .container .info {
+    flex-direction: column;
+    gap: 35px;
+   }
+}
+.section .info .search {
+    max-width: 400px;
+    box-shadow: 0 0 8px 0px rgb(0, 0, 0,0.15);
+    border-radius: 10px;
+    padding-left: 24px;
+    background-color: white;
+    width: 350px;
+    color: #999;
+}
+@media (max-width:768px) {
+    .section .container .info .search {
+     width: 100%;
+    }
+ }
+.section .search input {
+    border: none;
+    outline: none;
+    padding: 16px;
+}
+.section .search input::placeholder {
+    color: var(--Dark-Gray);
+}
+.section .info .filter {
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0 0 8px 0px rgb(0, 0, 0,0.15);
+}
+@media (max-width:768px) {
+    .section .container .filter {
+     width: 200px;
+    }
+ }
+/* End Section */
