@@ -19,12 +19,19 @@ html {
 }
 body {
     font-family: "Nunito Sans", serif;
+    background-color: var(--White);
+    color:var(--Dark-Blue);
 }
+body.dark {
+    background-color: var(--Dark-Blue) ;
+    color:var(--White);
+ }
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
+    /* color: #999; */
 }
 .container {
     padding-left: 15px;
@@ -54,6 +61,7 @@ a {
 /* Start Header */
 .header {
     box-shadow: 0px 2px 4px 0px hsl(0deg 0% 52% / 27%);
+    /* background-color: var(--White); */
 }
 .header .container {
     display: flex;
@@ -61,7 +69,7 @@ a {
     justify-content: space-between;
 }
 .header .container h3 {
-    font-size: 20px;
+    font-size: 216px;
     font-weight: 800;
     cursor: pointer;
 }
@@ -75,7 +83,7 @@ a {
 /* Start Section */
 .section {
     margin-top: 5px;
-    background-color: var(--Very-Light-Gray);
+    
     height: 100vh;
 }
 .section .container .info {
@@ -95,9 +103,8 @@ a {
     box-shadow: 0 0 8px 0px rgb(0, 0, 0,0.15);
     border-radius: 10px;
     padding-left: 24px;
-    background-color: white;
     width: 350px;
-    color: #999;
+    color: inherit;
 }
 @media (max-width:768px) {
     .section .container .info .search {
@@ -108,9 +115,11 @@ a {
     border: none;
     outline: none;
     padding: 16px;
+    background-color: inherit;
+    color: inherit;
 }
 .section .search input::placeholder {
-    color: var(--Dark-Gray);
+    color: inherit;
 }
 .section .info .filter {
     position: relative;
@@ -124,6 +133,8 @@ a {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     box-shadow: 0 0 8px 0px rgb(0, 0, 0,0.15);
+    background-color: inherit;
+    color: inherit;
 }
 @media (max-width:768px) {
     .section .container .filter {
@@ -134,10 +145,10 @@ a {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
    gap: 30px;
+   color: inherit;
 }
 .countries .country {
     border-radius: 8px;
-    background-color: var(--White);
     overflow: hidden;
     padding-bottom: 24px;
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
@@ -147,6 +158,7 @@ a {
     -ms-transition: 0.5s;
     -o-transition: 0.2s;
     cursor: pointer;
+    color: inherit;
 }
  .country:hover {
     transform: scale(1.03);
@@ -154,16 +166,17 @@ a {
 }
 .card-text {
     padding: 0 20px;
+    color: inherit;
 }
 .card-text h3 {
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 24px;
-    color: black;
+    color: inherit;
 }
 .card-text p {
     padding: 5px;
-    color: black;
+    color: inherit;
 }
 .card-text p span {
     font-size: 14px;
@@ -177,4 +190,5 @@ a {
     height: 300px;
     object-fit: cover;
  }
+
 /* End Section */

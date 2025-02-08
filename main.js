@@ -1,10 +1,13 @@
 const countries = document.querySelector('.countries');
+const country = document.querySelector('.countries .country');
 fetch(`https://restcountries.com/v3.1/all`)
   .then((res) => res.json())
   .then((data) => {
     data.forEach(country => {
+
         // console.log(country)
         const countryCard = document.createElement('a')
+        // console.log(countryCard)
         countryCard.classList.add('country')
         countryCard.href = `/country.html?name=${country.name.common}`
         countryCard.innerHTML = `
@@ -17,6 +20,11 @@ fetch(`https://restcountries.com/v3.1/all`)
             </div>
     `
     countries.append(countryCard)
-    });
-  })
 
+});
+})
+
+const darkMode = document.querySelector(".icon")
+darkMode.addEventListener('click', () => {
+  document.body.classList.toggle('dark')
+})
